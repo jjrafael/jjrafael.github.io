@@ -12,12 +12,13 @@ JJR.extend('Talk', function(App) {
         jQueryMap = { 
             $container : $container
         };
-        return true;
+        return true;    
     };
 
     var showTalkSection = function(val) {
         var cont = $('.talk-wrapper');
         if(val === 'close'){
+            $('body').css('overflow', '');
             setTimeout(function(){
                 $(cont).find('.talk-inner').animate({
                     'margin-top': 80,
@@ -37,6 +38,7 @@ JJR.extend('Talk', function(App) {
                 App.Nav.inspectPage();
             }, 800);
         }else {
+            $('body').css('overflow', 'hidden');
             setTimeout(function(){
                 $('body').css('overflow', 'hidden');
                 $(cont).addClass('active');

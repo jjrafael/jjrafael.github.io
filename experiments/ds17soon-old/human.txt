@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ericson Luciano -- Front End Developer and Designer -- @ericsonluciano
+    Jessie James Rafael -- Front End Developer and Designer --
+
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, SCSS,
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, Bulma CSS, Gulp

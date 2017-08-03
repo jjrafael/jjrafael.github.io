@@ -35,7 +35,7 @@ this["SummitHandle"]["templates"]["agenda"] = Handlebars.template({"1":function(
     + ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.speakers : depth0),{"name":"each","hash":{},"fn":this.program(6, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "						</div>\n";
 },"6":function(depth0,helpers,partials,data) {
-    return "							<img src=\"../assets/img/speakers/"
+    return "							<img src=\"assets/img/speakers/"
     + this.escapeExpression(this.lambda(depth0, depth0))
     + ".jpg\">\n";
 },"8":function(depth0,helpers,partials,data) {
@@ -64,7 +64,7 @@ this["SummitHandle"]["templates"]["hero"] = Handlebars.template({"compiler":[6,"
 this["SummitHandle"]["templates"]["modal"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1, alias1=this.lambda, alias2=this.escapeExpression;
 
-  return "			<div class=\"speaker-modal\">\n				<div class=\"speaker-img\">\n					<div class=\"background\">\n						<div class=\"figure\" style=\"display: block; background-image: url(../assets/img/speakers/"
+  return "			<div class=\"speaker-modal\">\n				<div class=\"speaker-img\">\n					<div class=\"background\">\n						<div class=\"figure\" style=\"display: block; background-image: url(assets/img/speakers/"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.image : stack1), depth0))
     + ");\"></div>\n					</div>\n					<div class=\"overlay\"></div>\n				</div>\n				<div class=\"speaker-infos\">\n					<h4>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.name : stack1), depth0))
@@ -151,7 +151,7 @@ this["SummitHandle"]["templates"]["speakers"] = Handlebars.template({"1":functio
     + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0))
     + "\" data-id=\""
     + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0))
-    + "\">\n			<div class=\"content\">\n				<div class=\"background\">\n					<div class=\"figure\" style=\"display: block; background-image: url(../assets/img/speakers/"
+    + "\">\n			<div class=\"content\">\n				<div class=\"background\">\n					<div class=\"figure\" style=\"display: block; background-image: url(assets/img/speakers/"
     + alias2(alias1((depth0 != null ? depth0.image : depth0), depth0))
     + ");\"></div>\n				</div>\n				<div class=\"overlay\"></div>\n				<div class=\"text\">\n					<h3 class=\"name\">"
     + alias2(alias1((depth0 != null ? depth0.name : depth0), depth0))
@@ -183,7 +183,7 @@ this["SummitHandle"]["templates"]["tickets"] = Handlebars.template({"1":function
 },"2":function(depth0,helpers,partials,data) {
     var alias1=this.lambda, alias2=this.escapeExpression;
 
-  return "  				<div class=\"tix-wrap\">\n  					<div class=\"tix-img\" style=\"background-image: url(../assets/img/tickets/"
+  return "  				<div class=\"tix-wrap\">\n  					<div class=\"tix-img\" style=\"background-image: url(assets/img/tickets/"
     + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0))
     + ".jpg)\">\n  						<h4>"
     + alias2(alias1((depth0 != null ? depth0.name : depth0), depth0))

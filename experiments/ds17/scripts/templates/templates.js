@@ -106,8 +106,8 @@ this["SummitHandle"]["templates"]["modal"] = Handlebars.template({"1":function(d
     var stack1;
 
   return "								<a href=\""
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.dribbble : stack1), depth0))
-    + "\" target=\"_blank\">\n									<div class=\"link-box\">\n										<i class=\"mdi mdi-dribble\"></i>\n									</div>\n								</a>\n";
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.linkedin : stack1), depth0))
+    + "\" target=\"_blank\">\n									<div class=\"link-box\">\n										<i class=\"mdi mdi-linkedin-box\"></i>\n									</div>\n								</a>\n";
 },"12":function(depth0,helpers,partials,data) {
     var stack1;
 

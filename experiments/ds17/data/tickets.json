@@ -1,0 +1,32 @@
+{
+	"powered": "Eventbrite",
+	"embed": "<div style='width:100%; text-align:left;'><iframe src='//eventbrite.com/tickets-external?eid=34946373544&ref=etckt' frameborder='0' height='765' width='100%' vspace='0' hspace='0' marginheight='5' marginwidth='5' scrolling='auto' allowtransparency='true'></iframe></div>",
+	"standard": [
+		{
+			"name": "student pass",
+			"key": "01",
+			"days": "2-day",
+			"price": "1,500"
+		},
+		{
+			"name": "professional pass",
+			"key": "02",
+			"days": "2-day",
+			"price": "1,500"
+		}
+	],
+	"promo": [
+		{
+			"name": "early bird 50%",
+			"key": "03",
+			"days": "2-day",
+			"price": "1,500"
+		},
+		{
+			"name": "early bird 20%",
+			"key": "03",
+			"days": "2-day",
+			"price": "1,700"
+		}
+	]
+}

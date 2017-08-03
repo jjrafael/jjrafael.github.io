@@ -1,0 +1,32 @@
+[
+	{
+		"key": "whyattend",
+		"href": "whyattend",
+		"text": "About"
+	},
+	{
+		"key": "speakers",
+		"href": "speakers",
+		"text": "Speakers"
+	},
+	{
+		"key": "agenda",
+		"href": "agenda",
+		"text": "Agenda"
+	},
+	{
+		"key": "venue",
+		"href": "venue",
+		"text": "Venue"
+	},
+	{
+		"key": "faqs",
+		"href": "faqs",
+		"text": "FAQs"
+	},
+	{
+		"key": "sponsors",
+		"href": "sponsors",
+		"text": "Sponsors"
+	}
+]

@@ -1,0 +1,23 @@
+[
+	{
+		"key": "01",
+		"name": "Winston Damarillo",
+		"title": "Founder ",
+		"company": "DevCon Philippines",
+		"image": "speaker-1.jpg",
+		"about": [
+			"Winston Damarillo is the Chief Strategy Officer (CSO) of the PLDT Group and the CEO of Talas, the Group’s Big Data organization. He’s a Silicon Valley veteran with over 20 years of experience as a technology entrepreneur and venture capital professional.",
+			"He serves as the Executive Chairman of Amihan Global Strategies (AGSX), a strategic consulting firm serving large corporations in Southeast Asia; Exist Software Labs, an award-winning leader in enterprise software; and Acaleph, an infrastructure company pioneering software-defined storage.<br>He holds a Bachelor of Science degree in Industrial Engineering from De La Salle University, and has completed executive programs at the Harvard Business School, Massachusetts Institute of Technology, and the University of Oxford."
+		],
+		"website": "http://amihan.net/",
+		"twitter": "https://twitter.com/winston_agsx",
+		"facebook": "https://facebook.com/jessiejamesrafael",
+		"github": "",
+		"linkedin": "https://www.linkedin.com/in/winstondamarillo",
+		"others": "",
+		"category": [
+			"keynotes",
+			"web"
+		]
+	}
+]

@@ -5,28 +5,38 @@
 		{
 			"name": "student pass",
 			"key": "01",
-			"days": "2-day",
-			"price": "1,500"
+			"img": "01",
+			"days": "2-days",
+			"details": "",
+			"price": "2,000"
 		},
 		{
 			"name": "professional pass",
 			"key": "02",
-			"days": "2-day",
-			"price": "1,500"
+			"img": "02",
+			"days": "2-days",
+			"details": "",
+			"price": "2,500"
 		}
 	],
 	"promo": [
 		{
-			"name": "early bird 50%",
+			"name": "Professionals Package",
 			"key": "03",
-			"days": "2-day",
-			"price": "1,500"
+			"img": "03",
+			"days": "2-days",
+			"details": "8 slots",
+			"save": "6,400",
+			"price": "13,600"
 		},
 		{
-			"name": "early bird 20%",
-			"key": "03",
-			"days": "2-day",
-			"price": "1,700"
+			"name": "Students Package",
+			"key": "04",
+			"img": "03",
+			"days": "2-days",
+			"details": "8 slots",
+			"save": "5,200",
+			"price": "10,800"
 		}
 	]
 }

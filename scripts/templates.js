@@ -38,7 +38,7 @@ this["Handlebars"]["Templates"]["experiences"] = Handlebars.template({"1":functi
   var stack1, buffer = "<div class=\"xp-wrapper\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.data : depth0), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "	<div class=\"xp-footer\">\n		<div class=\"xp-status\" data-field=\"dev\">\n			Development\n		</div>\n		<div class=\"xp-status\" data-field=\"des\">\n			UI Design\n		</div>\n		<div class=\"xp-status\" data-field=\"illus\">\n			GD/Illustrations\n		</div>\n		<div class=\"xp-status\" data-field=\"others\">\n			Others (Database, Server-side, Marketing)\n		</div>\n	</div>\n</div>";
+  return buffer + "	<div class=\"xp-footer hide\">\n		<div class=\"xp-status\" data-field=\"dev\">\n			Development\n		</div>\n		<div class=\"xp-status\" data-field=\"des\">\n			UI Design\n		</div>\n		<div class=\"xp-status\" data-field=\"illus\">\n			GD/Illustrations\n		</div>\n		<div class=\"xp-status\" data-field=\"others\">\n			Others (Database, Server-side, Marketing)\n		</div>\n	</div>\n</div>";
 },"useData":true});
 
 this["Handlebars"]["Templates"]["home"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
@@ -193,6 +193,24 @@ this["Handlebars"]["Templates"]["projects"] = Handlebars.template({"1":function(
 this["Handlebars"]["Templates"]["talk"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   return "<div class=\"talk-wrapper\">\n	<div class=\"talk-left\">\n		<div class=\"talk-inner\">\n			<h1>Hi again!</h1>\n			<h4>\n				I'm Manila-based Developer and Designer. I’ve been on this field for almost 10 years, graduated BSIT. My expertise are everything Front-end Dev, UI/UX and Illustrations. Had an opportunity to work on projects based in the US, UK, Singapore, Thailand and Manila. And yes, I belong to the small group of humans that can do both visuals and engineering. I recently worked on \"headhuntr.io\", a recruitment and candidate management platform integrated with data algorithms, scheduled calls and comprehensive profile information; and I also developed a game called \"Alias\", a real-time board game interconnected with multiple active devices using modern dev stack, react and firebase. I'm Looking for a FRESH NEW collaborations, shoot me a message!\n			</h4>\n		</div>\n		<div class=\"collage-wrap\"></div>\n	</div>\n	<div class=\"talk-right\">\n		<div class=\"collage-wrap\"></div>\n		<div class=\"talk-inner\">\n			<h1>Let's talk!</h1>\n			<div class=\"contact-wrapper\">\n				<div class=\"contact-item\" data-item=\"email\">\n					<i class=\"mdi mdi-email\" title=\"Email\"></i>\n					<a href=\"mailto:jessiejamesrafael@gmail.com?subject=Inquiry%from%Portfolio\" target=\"_blank\">jessiejamesrafael@gmail</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jjrafael.works\" target=\"_blank\">@jjrafael.works</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jessiejrafael\" target=\"_blank\">@jessiejrafael</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-github-circle\" title=\"Github\"></i>\n					<a href=\"http://jjrafael.github.com\" target=\"_blank\">Github</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"linkedin\">\n					<i class=\"mdi mdi-linkedin-box\" title=\"LinkedIn\"></i>\n					<a href=\"http://linkedin.com/jessiejamesrafael\" target=\"_blank\">LinkedIn</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"cv\">\n					<i class=\"mdi mdi-file-pdf\" target=\"_blank\" title=\"CV\"></i>\n					<a href=\"assets/jjr-cv-2023.pdf\" target=\"_blank\">Get my latest CV</a>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
   },"useData":true});
+
+this["Handlebars"]["Templates"]["tools"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+  var lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "                <div class=\"tag\" data-category="
+    + escapeExpression(lambda((depth0 != null ? depth0.category : depth0), depth0))
+    + " data-tool=\""
+    + escapeExpression(lambda((depth0 != null ? depth0.label : depth0), depth0))
+    + "\"\\>\n                    "
+    + escapeExpression(lambda((depth0 != null ? depth0.label : depth0), depth0))
+    + "\n                    <span class=\"years\">\n                        "
+    + escapeExpression(lambda((depth0 != null ? depth0.years : depth0), depth0))
+    + " YRS\n                    </span>\n                </div>\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var stack1, buffer = "<div class=\"tools-wrapper\">\n    <div class=\"tools-inner\">\n        <h3>Filter projects by Category</h3>\n        <h4>\n            Select categories or tools to filter projects that are more relevant to what you're looking for\n        </h4>\n        <div class=\"tabs tabs-category clearfix\">\n            <div class=\"tab\" data-category=\"dev\">\n                Front-End Dev\n            </div>\n            <div class=\"tab\" data-category=\"des\">\n                UI/UX\n            </div>\n            <div class=\"tab\" data-category=\"illus\">\n                Illustrations\n            </div>\n            <div class=\"tab\" data-category=\"others\">\n                Others\n            </div>\n        </div>\n    </div>\n    <div class=\"tools-inner\">\n        <h3>Or filter by specific tools</h3>\n        <h4>\n            Below are the most relevant or latest tools I have used or attained\n        </h4>\n        <div class=\"tags tags-tools\">\n";
+  stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.data : depth0), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "        </div>\n    </div>\n</div>";
+},"useData":true});
 
 this["Handlebars"]["Templates"]["walkthru"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, buffer = "				<div class=\"block-wrap\" id=\""

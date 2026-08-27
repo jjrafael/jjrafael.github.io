@@ -1,6 +1,113 @@
 this["Handlebars"] = this["Handlebars"] || {};
 this["Handlebars"]["Templates"] = this["Handlebars"]["Templates"] || {};
 
+this["Handlebars"]["Templates"]["beforeafter"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, buffer = "			<div class=\"block-wrap\" id=\""
+    + escapeExpression(lambda((depth0 != null ? depth0.id : depth0), depth0))
+    + "\">\n";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.image : depth0), {"name":"if","hash":{},"fn":this.program(2, data),"inverse":this.program(7, data),"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  buffer += "				<div class=\"details-wrap\">\n					<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">"
+    + escapeExpression(lambda((depth0 != null ? depth0.title : depth0), depth0))
+    + "</h4>\n					<p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.paragraph : depth0), depth0))
+    + "</p>\n";
+  stack1 = ((helpers.ifCond || (depth0 && depth0.ifCond) || helperMissing).call(depth0, (depth0 != null ? depth0.id : depth0), "===", "entegy-1-block6", {"name":"ifCond","hash":{},"fn":this.program(9, data),"inverse":this.noop,"data":data}));
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "				</div>\n			</div>\n";
+},"2":function(depth0,helpers,partials,data) {
+  var stack1, buffer = "";
+  stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.afterImage : depth0), {"name":"if","hash":{},"fn":this.program(3, data),"inverse":this.program(5, data),"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer;
+},"3":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "				<div class=\"beforeafter-box\" style=\"--split-pos: 50%;\">\n					<div class=\"image-layer before-image\" style=\"background-image: url("
+    + escapeExpression(lambda((depth0 != null ? depth0.image : depth0), depth0))
+    + ")\">\n						<span class=\"badge badge-before\">BEFORE</span>\n					</div>\n					<div class=\"image-layer after-image\" style=\"background-image: url("
+    + escapeExpression(lambda((depth0 != null ? depth0.afterImage : depth0), depth0))
+    + ")\">\n						<span class=\"badge badge-after\"\n							style=\"background-color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">AFTER</span>\n					</div>\n					<div class=\"slider-divider\" style=\"--primary-color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">\n						<div class=\"slider-handle\" style=\"background-color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">\n							<i class=\"mdi mdi-swap-horizontal\"></i>\n						</div>\n					</div>\n					<input type=\"range\" min=\"0\" max=\"100\" value=\"50\" class=\"slider-range\"\n						aria-label=\"Before and After comparison slider\">\n				</div>\n";
+},"5":function(depth0,helpers,partials,data) {
+  var lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "				<div class=\"img-wrap\" style=\"background-image: url("
+    + escapeExpression(lambda((depth0 != null ? depth0.afterImage : depth0), depth0))
+    + ")\"></div>\n";
+},"7":function(depth0,helpers,partials,data) {
+  return "				<div class=\"divider-line\"></div>\n";
+  },"9":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "					<div class=\"subdetails-wrap\">\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Fenix</h4>\n							<p>\"Entegy is Fenix Event Tech's trusted platform for delivering conferences, trade shows,\n								and corporate events across international markets. The platform's flexibility,\n								reliability, and end-to-end event capabilities allow us to deliver seamless attendee\n								experiences at scale, while adapting to the unique requirements of each client and event\n								format. Beyond the technology itself, the Entegy team has been an outstanding partner to\n								work with, responsive, supportive, and consistently going above and beyond to help us\n								deliver world-class events for our clients worldwide.\" </p>\n							<h5>Matteo Poggio - Co-Founder</h5>\n						</div>\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Real Estate Institute of NZ</h4>\n							<p>\"The platform itself is really user-friendly and easy to get around. On top of that, the\n								Entegy team has been amazing - always happy to help and super responsive whenever we've\n								hit something a bit tricky.\" </p>\n							<h5>Tayo Griffiths - Events Specialist </h5>\n						</div>\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">MCI (Biggest Professional Conference)</h4>\n							<p>\"Entegy is a trusted, long-standing partner to MCI Australia for over a decade,\n								developing robust event apps, with end-to-end event technology services. Their platform\n								is reliable, intuitive and continually evolving. The Entegy Team consistency bring\n								collaborative, solutions-focussed approach to every project. Most notably their support\n								team, and expertise have played a key role in delivering seamless digital experiences\n								for our events.\" </p>\n							<h5>Event Organizer</h5>\n						</div>\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Independent Schools NSW</h4>\n							<p>\"I wanted to also mention that we had our big conference last week - and it was a roaring\n								success. The app worked brilliantly for everything. Thanks to you and the team. There\n								were lots of comments about the app looking fresh and new and easier to get around\" </p>\n							<h5>Event Organizer</h5>\n						</div>\n					</div>\n";
+},"11":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "					<div class=\"block-wrap\" id=\""
+    + escapeExpression(lambda((depth0 != null ? depth0.id : depth0), depth0))
+    + "\"\n						style=\"background-color: color-mix(in srgb, "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ", #000 75%);\">\n						<div class=\"img-wrap\" style=\"background-image: url("
+    + escapeExpression(lambda((depth0 != null ? depth0.image : depth0), depth0))
+    + ")\"></div>\n						<div class=\"details-wrap\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">"
+    + escapeExpression(lambda((depth0 != null ? depth0.title : depth0), depth0))
+    + "</h4>\n							<p>"
+    + escapeExpression(lambda((depth0 != null ? depth0.paragraph : depth0), depth0))
+    + "</p>\n						</div>\n					</div>\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<div class=\"beforeafter-container walkthru-container\" data-type=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.type : stack1), depth0))
+    + "\" data-id=\""
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.id : stack1), depth0))
+    + "\">\n	<div class=\"beforeafter-banner walkthru-banner\" style=\"background-image: url("
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.banner : stack1), depth0))
+    + ")\">\n		<div class=\"banner-header\">\n			<div class=\"banner-title\" style=\"background-color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.title : stack1), depth0))
+    + "</div>\n			<div class=\"banner-meta\">\n				<div class=\"banner-logo\" style=\"background-image: url("
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.client : stack1)) != null ? stack1.img : stack1), depth0))
+    + ")\"></div>\n				<div class=\"banner-subtitle\">"
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.subtitle : stack1), depth0))
+    + "</div>\n				<div class=\"banner-date\">Project Date: "
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.date : stack1), depth0))
+    + "</div>\n				<div class=\"banner-updated\">Page Updated: "
+    + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1['updated-date'] : stack1), depth0))
+    + "</div>\n			</div>\n		</div>\n	</div>\n	<div class=\"beforeafter-summary walkthru-summary\">\n		<div class=\"title\" style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.summary : stack1)) != null ? stack1.title : stack1), depth0))
+    + "</div>\n		<p>"
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.summary : stack1)) != null ? stack1.paragraph : stack1), depth0))
+    + "</p>\n	</div>\n	<div class=\"beforeafter-inner walkthru-inner\">\n		<div class=\"beforeafter-fadeBlock\">\n";
+  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.fadeBlock : stack1), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  buffer += "		</div>\n		<div class=\"beforeafter-divider1 walkthru-divider1\">\n			<div class=\"title\" style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.divider1 : stack1)) != null ? stack1.title : stack1), depth0))
+    + "</div>\n			<p>"
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.divider1 : stack1)) != null ? stack1.paragraph : stack1), depth0))
+    + "</p>\n		</div>\n		<div class=\"beforeafter-scrollBlock walkthru-scrollBlock\">\n			<div class=\"block-outer\">\n				<div class=\"block-subouter\">\n";
+  stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.scrollBlock : stack1), {"name":"each","hash":{},"fn":this.program(11, data),"inverse":this.noop,"data":data});
+  if (stack1 != null) { buffer += stack1; }
+  return buffer + "				</div>\n			</div>\n		</div>\n	</div>\n	<footer>\n		<div class=\"btn-wrapper\">\n			<div class=\"btn-projects\">View all Projects</div>\n		</div>\n		<div class=\"footer-inner\">\n			<h6 class=\"copyr\">JJRAFAEL © 2026</h6>\n		</div>\n	</footer>\n</div>";
+},"useData":true});
+
 this["Handlebars"]["Templates"]["experiences"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, buffer = "	<div class=\"xp-container\">\n		<div class=\"graph-wrap\">\n			<h1>"
     + escapeExpression(lambda((depth0 != null ? depth0.projects : depth0), depth0))
@@ -191,53 +298,66 @@ this["Handlebars"]["Templates"]["projects"] = Handlebars.template({"1":function(
 },"useData":true});
 
 this["Handlebars"]["Templates"]["talk"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"talk-wrapper\">\n	<div class=\"talk-left\">\n		<div class=\"talk-inner\">\n			<h1>Hi again!</h1>\n			<h4>\n				I'm Manila-based Developer and Designer. I’ve been on this field for almost 10 years, graduated BSIT. My expertise are everything Front-end Dev, UI/UX and Illustrations. Had an opportunity to work on projects based in the US, UK, Singapore, Thailand and Manila. And yes, I belong to the small group of humans that can do both visuals and engineering. I recently worked on \"headhuntr.io\", a recruitment and candidate management platform integrated with data algorithms, scheduled calls and comprehensive profile information; and I also developed a game called \"Alias\", a real-time board game interconnected with multiple active devices using modern dev stack, react and firebase. I'm Looking for a FRESH NEW collaborations, shoot me a message!\n			</h4>\n		</div>\n		<div class=\"collage-wrap\"></div>\n	</div>\n	<div class=\"talk-right\">\n		<div class=\"collage-wrap\"></div>\n		<div class=\"talk-inner\">\n			<h1>Let's talk!</h1>\n			<div class=\"contact-wrapper\">\n				<div class=\"contact-item\" data-item=\"email\">\n					<i class=\"mdi mdi-email\" title=\"Email\"></i>\n					<a href=\"mailto:jessiejamesrafael@gmail.com?subject=Inquiry%from%Portfolio\" target=\"_blank\">jessiejamesrafael@gmail</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jjrafael.works\" target=\"_blank\">@jjrafael.works</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jessiejrafael\" target=\"_blank\">@jessiejrafael</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-github-circle\" title=\"Github\"></i>\n					<a href=\"http://jjrafael.github.com\" target=\"_blank\">Github</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"linkedin\">\n					<i class=\"mdi mdi-linkedin-box\" title=\"LinkedIn\"></i>\n					<a href=\"http://linkedin.com/jessiejamesrafael\" target=\"_blank\">LinkedIn</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"cv\">\n					<i class=\"mdi mdi-file-pdf\" target=\"_blank\" title=\"CV\"></i>\n					<a href=\"assets/jjr-cv-2024.pdf\" target=\"_blank\">Get my latest CV</a>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
+  return "<div class=\"talk-wrapper\">\n	<div class=\"talk-left\">\n		<div class=\"talk-inner\">\n			<h1>Hi again!</h1>\n			<h4>\n				I'm Manila-based Developer and Designer. I’ve been on this field for almost 10 years, graduated BSIT. My\n				expertise are everything Front-end Dev, UI/UX and Illustrations. Had an opportunity to work on projects\n				based in the US, UK, Singapore, Thailand and Manila. And yes, I belong to the small group of humans that\n				can do both visuals and engineering. I recently worked on \"headhuntr.io\", a recruitment and candidate\n				management platform integrated with data algorithms, scheduled calls and comprehensive profile\n				information; and I also developed a game called \"Alias\", a real-time board game interconnected with\n				multiple active devices using modern dev stack, react and firebase. I'm Looking for a FRESH NEW\n				collaborations, shoot me a message!\n			</h4>\n		</div>\n		<div class=\"collage-wrap\"></div>\n	</div>\n	<div class=\"talk-right\">\n		<div class=\"collage-wrap\"></div>\n		<div class=\"talk-inner\">\n			<h1>Let's talk!</h1>\n			<div class=\"contact-wrapper\">\n				<div class=\"contact-item\" data-item=\"email\">\n					<i class=\"mdi mdi-email\" title=\"Email\"></i>\n					<a href=\"mailto:jessiejamesrafael@gmail.com?subject=Inquiry%from%Portfolio\"\n						target=\"_blank\">jessiejamesrafael@gmail</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jjrafael.works\" target=\"_blank\">@jjrafael.works</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-instagram\" title=\"Instagram\"></i>\n					<a href=\"http://instagram.com/jessiejrafael\" target=\"_blank\">@jessiejrafael</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"instagram\">\n					<i class=\"mdi mdi-github-circle\" title=\"Github\"></i>\n					<a href=\"http://jjrafael.github.com\" target=\"_blank\">Github</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"linkedin\">\n					<i class=\"mdi mdi-linkedin-box\" title=\"LinkedIn\"></i>\n					<a href=\"http://linkedin.com/jessiejamesrafael\" target=\"_blank\">LinkedIn</a>\n				</div>\n				<div class=\"contact-item\" data-item=\"cv\">\n					<i class=\"mdi mdi-file-pdf\" target=\"_blank\" title=\"CV\"></i>\n					<a href=\"assets/jjr-cv-2026-w-jobdesc.pdf\" target=\"_blank\">Get my latest CV</a>\n				</div>\n			</div>\n		</div>\n	</div>\n</div>";
   },"useData":true});
 
 this["Handlebars"]["Templates"]["tools"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
   var lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "                <div class=\"tag\" data-category="
+  return "            <div class=\"tag\" data-category=\""
     + escapeExpression(lambda((depth0 != null ? depth0.category : depth0), depth0))
-    + " data-tool=\""
+    + "\" data-tool=\""
     + escapeExpression(lambda((depth0 != null ? depth0.label : depth0), depth0))
-    + "\"\\>\n                    "
+    + "\">\n                "
     + escapeExpression(lambda((depth0 != null ? depth0.label : depth0), depth0))
-    + "\n                    <span class=\"years\">\n                        "
+    + "\n                <span class=\"years\">\n                    "
     + escapeExpression(lambda((depth0 != null ? depth0.years : depth0), depth0))
-    + " YRS\n                    </span>\n                </div>\n";
+    + " YRS\n                </span>\n            </div>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  var stack1, buffer = "<div class=\"tools-wrapper\">\n    <div class=\"tools-inner\">\n        <h3>Filter projects by Category</h3>\n        <h4>\n            Select categories or tools to filter projects that are more relevant to what you're looking for\n        </h4>\n        <div class=\"tabs tabs-category clearfix\">\n            <div class=\"tab\" data-category=\"dev\">\n                Front-End Dev\n            </div>\n            <div class=\"tab\" data-category=\"des\">\n                UI/UX\n            </div>\n            <div class=\"tab\" data-category=\"illus\">\n                Illustrations\n            </div>\n            <div class=\"tab\" data-category=\"others\">\n                Others\n            </div>\n        </div>\n    </div>\n    <div class=\"tools-inner\">\n        <h3>Or filter by specific tools</h3>\n        <h4>\n            Below are the most relevant or latest tools I have used or attained\n        </h4>\n        <div class=\"tags tags-tools\">\n";
+  var stack1, buffer = "<div class=\"tools-wrapper\">\n    <div class=\"tools-inner\">\n        <h3>Filter projects by Category</h3>\n        <h4>\n            Select categories or tools to filter projects that are more relevant to what you're looking for\n        </h4>\n        <div class=\"tabs tabs-category clearfix\">\n            <div class=\"tab\" data-category=\"dev\">\n                Front-End Dev\n            </div>\n            <div class=\"tab\" data-category=\"des\">\n                UI/UX\n            </div>\n            <div class=\"tab\" data-category=\"illus\">\n                Illustrations\n            </div>\n            <div class=\"tab\" data-category=\"others\">\n                Others\n            </div>\n        </div>\n    </div>\n    <div class=\"tools-inner\">\n        <h3>Or filter by specific tools</h3>\n        <h4>\n            Below are the most relevant or latest tools I have used or attained\n        </h4>\n        <div class=\"tools-search-wrapper\">\n            <div class=\"tools-search-box\">\n                <i class=\"mdi mdi-magnify search-icon\"></i>\n                <input type=\"text\" class=\"tools-search-input\" placeholder=\"Search tools...\" autocomplete=\"off\" spellcheck=\"false\" aria-label=\"Search tools\" />\n                <button type=\"button\" class=\"tools-search-clear\" title=\"Clear search\" aria-label=\"Clear search\">\n                    <i class=\"mdi mdi-close\"></i>\n                </button>\n            </div>\n        </div>\n        <div class=\"tags tags-tools\">\n";
   stack1 = helpers.each.call(depth0, (depth0 != null ? depth0.data : depth0), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
   return buffer + "        </div>\n    </div>\n</div>";
 },"useData":true});
 
 this["Handlebars"]["Templates"]["walkthru"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
-  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, buffer = "				<div class=\"block-wrap\" id=\""
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing, buffer = "			<div class=\"block-wrap\" id=\""
     + escapeExpression(lambda((depth0 != null ? depth0.id : depth0), depth0))
-    + "\">\n					<div class=\"img-wrap\"  style=\"background-image: url("
+    + "\">\n				<div class=\"img-wrap\" style=\"background-image: url("
     + escapeExpression(lambda((depth0 != null ? depth0.image : depth0), depth0))
-    + ")\"></div>\n					<div class=\"details-wrap\">\n						<h4>"
+    + ")\"></div>\n				<div class=\"details-wrap\">\n					<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">"
     + escapeExpression(lambda((depth0 != null ? depth0.title : depth0), depth0))
-    + "</h4>\n						<p>"
+    + "</h4>\n					<p>"
     + escapeExpression(lambda((depth0 != null ? depth0.paragraph : depth0), depth0))
     + "</p>\n";
   stack1 = ((helpers.ifCond || (depth0 && depth0.ifCond) || helperMissing).call(depth0, (depth0 != null ? depth0.id : depth0), "===", "hhi-1-block7", {"name":"ifCond","hash":{},"fn":this.program(2, data),"inverse":this.noop,"data":data}));
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "					</div>\n				</div>\n";
+  return buffer + "				</div>\n			</div>\n";
 },"2":function(depth0,helpers,partials,data) {
-  return "							<div class=\"subdetails-wrap\">\n								<div class=\"subdetails\">\n									<h4>Obsidian (Fortune 100 Gaming Company)</h4>\n									<p>\"I really like the UI and ease of use of the headhuntr.io platform in finding specialized gaming-qualified candidates. </p>\n									<h5>- Recruiter</h5>\n								</div>\n								<div class=\"subdetails\">\n									<h4>Apple</h4>\n									<p>\"I have been in the industry for over 20 years, and I haven’t seen any recruiting platform that looks this good and is so intuitive to use.\" </p>\n									<h5>- Lead Recruiter</h5>\n								</div>\n								<div class=\"subdetails\">\n									<h4>Iron Mountain</h4>\n									<p>\"The look and feel of the headhuntr.io platform are the best that I have seen. The layout of the features like the Must Haves, filters, and likely-to-jump indicator enables anyone to find qualified candidates faster.\" </p>\n									<h5>- Suzanne Hovhannesian, VP of Talent</h5>\n								</div>\n							</div>\n";
-  },"4":function(depth0,helpers,partials,data) {
-  var lambda=this.lambda, escapeExpression=this.escapeExpression;
-  return "						<div class=\"block-wrap\" id=\""
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "					<div class=\"subdetails-wrap\">\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Obsidian (Fortune 100 Gaming Company)</h4>\n							<p>\"I really like the UI and ease of use of the headhuntr.io platform in finding specialized\n								gaming-qualified candidates.\"</p>\n							<h5>- Recruiter</h5>\n						</div>\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Apple</h4>\n							<p>\"I have been in the industry for over 20 years, and I haven’t seen any recruiting\n								platform that looks this good and is so intuitive to use.\" </p>\n							<h5>- Lead Recruiter</h5>\n						</div>\n						<div class=\"subdetails\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">Iron Mountain</h4>\n							<p>\"The look and feel of the headhuntr.io platform are the best that I have seen. The layout\n								of the features like the Must Haves, filters, and likely-to-jump indicator enables\n								anyone to find qualified candidates faster.\" </p>\n							<h5>- Suzanne Hovhannesian, VP of Talent</h5>\n						</div>\n					</div>\n";
+},"4":function(depth0,helpers,partials,data) {
+  var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression;
+  return "					<div class=\"block-wrap\" id=\""
     + escapeExpression(lambda((depth0 != null ? depth0.id : depth0), depth0))
-    + "\">\n							<div class=\"img-wrap\"  style=\"background-image: url("
+    + "\"\n						style=\"background-color: color-mix(in srgb, "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ", #000 75%);\">\n						<div class=\"img-wrap\" style=\"background-image: url("
     + escapeExpression(lambda((depth0 != null ? depth0.image : depth0), depth0))
-    + ")\"></div>\n							<div class=\"details-wrap\">\n								<h4>"
+    + ")\"></div>\n						<div class=\"details-wrap\">\n							<h4 style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = ((stack1 = (data && data.root)) && stack1.data)) && stack1.colors)) && stack1.primary), depth0))
+    + ";\">"
     + escapeExpression(lambda((depth0 != null ? depth0.title : depth0), depth0))
-    + "</h4>\n								<p>"
+    + "</h4>\n							<p>"
     + escapeExpression(lambda((depth0 != null ? depth0.paragraph : depth0), depth0))
-    + "</p>\n							</div>\n						</div>\n";
+    + "</p>\n						</div>\n					</div>\n";
 },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, lambda=this.lambda, escapeExpression=this.escapeExpression, buffer = "<div class=\"walkthru-container\" data-type=\""
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.type : stack1), depth0))
@@ -245,7 +365,9 @@ this["Handlebars"]["Templates"]["walkthru"] = Handlebars.template({"1":function(
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.id : stack1), depth0))
     + "\">\n	<div class=\"walkthru-banner\" style=\"background-image: url("
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.banner : stack1), depth0))
-    + ")\">\n		<div class=\"banner-header\">\n			<div class=\"banner-title\">"
+    + ")\">\n		<div class=\"banner-header\">\n			<div class=\"banner-title\" style=\"background-color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.title : stack1), depth0))
     + "</div>\n			<div class=\"banner-meta\">\n				<div class=\"banner-logo\" style=\"background-image: url("
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.client : stack1)) != null ? stack1.img : stack1), depth0))
@@ -255,19 +377,23 @@ this["Handlebars"]["Templates"]["walkthru"] = Handlebars.template({"1":function(
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.date : stack1), depth0))
     + "</div>\n				<div class=\"banner-updated\">Page Updated: "
     + escapeExpression(lambda(((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1['updated-date'] : stack1), depth0))
-    + "</div>\n			</div>\n		</div>\n	</div>\n	<div class=\"walkthru-summary\">\n		<div class=\"title\">"
+    + "</div>\n			</div>\n		</div>\n	</div>\n	<div class=\"walkthru-summary\">\n		<div class=\"title\" style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.summary : stack1)) != null ? stack1.title : stack1), depth0))
     + "</div>\n		<p>"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.summary : stack1)) != null ? stack1.paragraph : stack1), depth0))
     + "</p>\n	</div>\n	<div class=\"walkthru-inner\">\n		<div class=\"walkthru-fadeBlock\">\n";
   stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.fadeBlock : stack1), {"name":"each","hash":{},"fn":this.program(1, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "		</div>\n		<div class=\"walkthru-divider1\">\n			<div class=\"title\">"
+  buffer += "		</div>\n		<div class=\"walkthru-divider1\">\n			<div class=\"title\" style=\"color: "
+    + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.colors : stack1)) != null ? stack1.primary : stack1), depth0))
+    + ";\">"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.divider1 : stack1)) != null ? stack1.title : stack1), depth0))
     + "</div>\n			<p>"
     + escapeExpression(lambda(((stack1 = ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.divider1 : stack1)) != null ? stack1.paragraph : stack1), depth0))
     + "</p>\n		</div>\n		<div class=\"walkthru-scrollBlock\">\n			<div class=\"block-outer\">\n				<div class=\"block-subouter\">\n";
   stack1 = helpers.each.call(depth0, ((stack1 = (depth0 != null ? depth0.data : depth0)) != null ? stack1.scrollBlock : stack1), {"name":"each","hash":{},"fn":this.program(4, data),"inverse":this.noop,"data":data});
   if (stack1 != null) { buffer += stack1; }
-  return buffer + "				</div>\n			</div>\n		</div>\n	</div>\n	<footer>\n        <div class=\"btn-wrapper\">\n			<div class=\"btn-projects\">View all Projects</div>\n        </div>\n        <div class=\"footer-inner\">\n            <h6 class=\"copyr\">JJRAFAEL © 2023</h6>\n        </div>\n    </footer>\n</div>";
+  return buffer + "				</div>\n			</div>\n		</div>\n	</div>\n	<footer>\n		<div class=\"btn-wrapper\">\n			<div class=\"btn-projects\">View all Projects</div>\n		</div>\n		<div class=\"footer-inner\">\n			<h6 class=\"copyr\">JJRAFAEL © 2023</h6>\n		</div>\n	</footer>\n</div>";
 },"useData":true});
